@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:method name="XmlRpc.TestTwoParameters" help="         Two parameters       " id="341c2e24-dd4b-4ed4-a65b-22859be5562c" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="341c2e24-dd4b-4ed4-a65b-22859be5562cfileName">XmlRpc.TestTwoParameters</con:setting>
+  </con:settings>
+  <con:call id="adf21a5d-1202-4264-86dd-cb11b0ff3c78" name="Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/xmlrpc/xmlrpcapi.rem</con:endpoint>
+    <con:request><![CDATA[<methodCall>
+<methodName>XmlRpc.TestTwoParameters</methodName>
+<params>
+<param><value><int></int></value></param>
+<param><value><int></int></value></param>
+</params>
+</methodCall>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+  </con:call>
+  <con:resultParameter>int</con:resultParameter>
+  <con:parameter>int</con:parameter>
+  <con:parameter>int</con:parameter>
+</con:method>

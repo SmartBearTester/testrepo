@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:method name="XmlRpc.TestBoolean" help="         Boolean       " id="9d34a32c-c3cb-44f0-af7e-9927f4d030a6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="9d34a32c-c3cb-44f0-af7e-9927f4d030a6fileName">XmlRpc.TestBoolean</con:setting>
+  </con:settings>
+  <con:call id="52ddb60d-140c-4a0b-8433-13b4e9f89244" name="Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/xmlrpc/xmlrpcapi.rem</con:endpoint>
+    <con:request><![CDATA[<methodCall>
+<methodName>XmlRpc.TestBoolean</methodName>
+<params>
+<param><value><boolean></boolean></value></param>
+</params>
+</methodCall>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+  </con:call>
+  <con:resultParameter>boolean</con:resultParameter>
+  <con:parameter>boolean</con:parameter>
+</con:method>

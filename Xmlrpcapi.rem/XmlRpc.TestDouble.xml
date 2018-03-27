@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:method name="XmlRpc.TestDouble" help="         Double       " id="55be2764-50d2-44fd-8f9c-45b8756c3b48" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="55be2764-50d2-44fd-8f9c-45b8756c3b48fileName">XmlRpc.TestDouble</con:setting>
+  </con:settings>
+  <con:call id="1c16b76a-2035-4573-9475-fe947cb63f21" name="Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/xmlrpc/xmlrpcapi.rem</con:endpoint>
+    <con:request><![CDATA[<methodCall>
+<methodName>XmlRpc.TestDouble</methodName>
+<params>
+<param><value><double></double></value></param>
+</params>
+</methodCall>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+  </con:call>
+  <con:resultParameter>double</con:resultParameter>
+  <con:parameter>double</con:parameter>
+</con:method>

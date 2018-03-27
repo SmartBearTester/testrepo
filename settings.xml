@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="f08bca8b-7ba2-4c6e-98e9-e8310f81ef9d" created="2.4.0-SNAPSHOT" activeEnvironment="Default environment" name="composite-project" resourceRoot="" updated="2.4.0-SNAPSHOT 2018-03-23T11:46:26Z" encryptionMode="Not encrypted" compositeProjectFormat="1.3" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f08bca8b-7ba2-4c6e-98e9-e8310f81ef9dfileName">composite-project</con:setting>
+  </con:settings>
+  <con:vcsConfiguration>
+    <con:vcsName>Git</con:vcsName>
+    <con:repositoryIdentifier>https://github.com/SmartBearTester/testrepo.git</con:repositoryIdentifier>
+  </con:vcsConfiguration>
+  <con:customMockService id="707a63aa-6e05-43b7-a341-e110acf82332" name="JMS Virtual Service 1">
+    <con:settings/>
+    <con:properties>
+      <con:property>
+        <con:name>jmsMockService.ttlHopLimit</con:name>
+        <con:value>10</con:value>
+      </con:property>
+    </con:properties>
+    <con:constraints>
+      <con:congestion>0</con:congestion>
+      <con:inputBandwidth>-1</con:inputBandwidth>
+      <con:outputBandwidth>-1</con:outputBandwidth>
+      <con:maxThreadPoolCapacity>20</con:maxThreadPoolCapacity>
+      <con:coreThreadPoolCapacity>5</con:coreThreadPoolCapacity>
+      <con:virtError>
+        <con:start>0</con:start>
+        <con:endless>true</con:endless>
+      </con:virtError>
+    </con:constraints>
+    <con:virtProperties>
+      <con:property>
+        <con:name>mockServiceType</con:name>
+        <con:value>JMS</con:value>
+      </con:property>
+    </con:virtProperties>
+  </con:customMockService>
+  <con:customMockService id="2bdb9eb1-8a5d-450c-b7b1-b38a76a16db5" name="JDBC Virtual Service 1">
+    <con:settings/>
+    <con:properties>
+      <con:property>
+        <con:name>jdbcMockService.port</con:name>
+        <con:value>10080</con:value>
+      </con:property>
+    </con:properties>
+    <con:constraints>
+      <con:congestion>0</con:congestion>
+      <con:inputBandwidth>-1</con:inputBandwidth>
+      <con:outputBandwidth>-1</con:outputBandwidth>
+      <con:maxThreadPoolCapacity>20</con:maxThreadPoolCapacity>
+      <con:coreThreadPoolCapacity>5</con:coreThreadPoolCapacity>
+      <con:virtError>
+        <con:start>0</con:start>
+        <con:endless>true</con:endless>
+      </con:virtError>
+    </con:constraints>
+    <con:virtProperties>
+      <con:property>
+        <con:name>mockServiceType</con:name>
+        <con:value>JDBC</con:value>
+      </con:property>
+    </con:virtProperties>
+  </con:customMockService>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:requirements/>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting/>
+  <con:authRepository/>
+  <con:tags/>
+</con:soapui-project>
