@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="3717f3a8-c687-46d2-89b7-a2691807d347" isOneWay="false" action="http://localhost/test_service/Service2.asmx/test_short" name="test_short" bindingOperationName="test_short" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="3717f3a8-c687-46d2-89b7-a2691807d347fileName">test_short</con:setting>
+  </con:settings>
+  <con:call id="2ae0df55-0b2a-4c87-9d42-e0eaa7576b4b" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02/SOAP/Service2.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service2.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_short/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service2.asmx/Service_typesSoap/test_shortRequest"/>
+  </con:call>
+</con:operation>

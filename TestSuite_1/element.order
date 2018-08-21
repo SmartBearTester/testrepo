@@ -1,0 +1,6 @@
+test_bool-TestCase.xml
+test_char-TestCase.xml
+test_float-TestCase.xml
+test_int-TestCase.xml
+test_long-TestCase.xml
+test_string-TestCase.xml

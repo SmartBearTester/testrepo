@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="a57a6160-496c-472f-a397-4afceae16edc" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="test_long TestCase" searchProperties="true" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a57a6160-496c-472f-a397-4afceae16edcfileName">test_long-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="3cb38363-e75c-4eae-abb9-50d0c3c3a700" name="test_long">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Service_typesSoap12</con:interface>
+      <con:operation>test_long</con:operation>
+      <con:request name="test_long" id="1f6faa30-641c-4cd9-af8f-1f8ef1881038">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02/SOAP/Service2.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service2.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_long/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service2.asmx/Service_typesSoap/test_longRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

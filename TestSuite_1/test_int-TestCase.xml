@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="d2f88eb8-513e-4e33-99e0-f82da35dbd61" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="test_int TestCase" searchProperties="true" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d2f88eb8-513e-4e33-99e0-f82da35dbd61fileName">test_int-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="7f264417-13f7-402d-8a87-0f4df9c93d42" name="test_int">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Service_typesSoap</con:interface>
+      <con:operation>test_int</con:operation>
+      <con:request name="test_int" id="2cb0ecd5-d629-4e43-a914-f92da5fa8d15">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02/SOAP/Service2.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service2.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:test_int/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service2.asmx/test_int"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

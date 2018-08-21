@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="6de96a3b-5594-4954-b087-12e8065d015d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="test_bool TestCase" searchProperties="true" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="6de96a3b-5594-4954-b087-12e8065d015dfileName">test_bool-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="e99a05de-42d5-4568-80ce-96888b1bb435" name="test_bool">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Service_typesSoap12</con:interface>
+      <con:operation>test_bool</con:operation>
+      <con:request name="test_bool" id="2a92a38e-3eef-4dc2-a9a5-6343dc2d61b4">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02/SOAP/Service2.asmx</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service2.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_bool/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:wsaConfig action="http://localhost/test_service/Service2.asmx/Service_typesSoap/test_boolRequest"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>
