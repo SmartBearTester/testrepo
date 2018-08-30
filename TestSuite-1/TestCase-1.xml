@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="95dd93a8-9b18-4f1c-9357-beeff3c8caaf" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="95dd93a8-9b18-4f1c-9357-beeff3c8caaffileName">TestCase-1</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="request" name="SOAP Request" id="245b8ff1-870d-4c8d-a72c-6048b7a65869">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>soap</con:interface>
+      <con:operation>Con_Stroka</con:operation>
+      <con:request name="SOAP Request" id="0e29bc2c-841b-4a40-98a7-237349665405">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://localhost:8091/</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:Con_Stroka/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:assertion type="SOAP Response" id="8eae80d7-71e5-4086-b44b-4f2c2590cf60"/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="REST Request" id="2f28c41e-39e4-4444-b139-f0c37b9e684e">
+    <con:settings/>
+    <con:config service="rest" resourcePath="/WCFREST/Service.svc/HelloWorld" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="e41910b5-43e5-4ae7-809a-dbaf14171a26" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://localhost:8092/</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://localhost/WCFREST/Service.svc/HelloWorld</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="JMS" name="JMS SOAP" id="5c9965b9-92ae-4cc7-b7ae-820eb6dc2793">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>soap</con:interface>
+      <con:operation>Con_Stroka</con:operation>
+      <con:request name="JMS SOAP" id="b50e00c1-36bd-4f52-8b58-57bd7c6d6ce3">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>jms://activeMQsession::queue_TestQ1::queue_TestQ2</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:Con_Stroka/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:username>null</con:username>
+          <con:password>null</con:password>
+          <con:domain>null</con:domain>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="JMS" name="JMS REST" id="09a04cef-4a17-467f-b765-0b33107353e0">
+    <con:settings/>
+    <con:config service="rest" methodName="" resourcePath="/WCFREST/Service.svc/getArrayInt" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="JMS Request" id="538ae9ac-195c-4e32-a5d8-abe452a24b48" mediaType="application/json" postQueryString="false">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>jms://activeMQsession::queue_TestQ1::queue_TestQ2</con:endpoint>
+        <con:request>"test_rest"</con:request>
+        <con:credentials>
+          <con:username>null</con:username>
+          <con:password>null</con:password>
+          <con:domain>null</con:domain>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

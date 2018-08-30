@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="7af94f1c-5cbc-4d25-838a-d36ac08fcc97" isOneWay="false" action="http://localhost/test_service/Service1.asmx/file_XML" name="file_XML" bindingOperationName="file_XML" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="7af94f1c-5cbc-4d25-838a-d36ac08fcc97fileName">file_XML</con:setting>
+  </con:settings>
+  <con:call id="e6e528f4-d8ba-4ae6-9e54-4d7956445936" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:file_XML/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/file_XML"/>
+  </con:call>
+</con:operation>

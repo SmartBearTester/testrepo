@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="" path="testBool" id="41414291-6803-46c8-ad6a-59f6ff71dde8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="41414291-6803-46c8-ad6a-59f6ff71dde8fileName">testBool</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="" id="60ab2184-4dbe-4e99-aa1d-ae31a8fcd518" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>t</con:name>
+        <con:value xsi:nil="true"/>
+        <con:style>QUERY</con:style>
+        <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:boolean</con:type>
+        <con:default xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Request 1" id="a7a326bc-3c1c-4019-aa3c-4d05e3e38e43" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

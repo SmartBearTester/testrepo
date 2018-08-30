@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="" path="ConStroka" id="030c1cc1-ea7a-4307-bcfb-62794b9587f6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="030c1cc1-ea7a-4307-bcfb-62794b9587f6fileName">ConStroka</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="" id="890efdc7-c50f-43f0-bc5a-58a7d81758e0" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>x</con:name>
+        <con:value xsi:nil="true"/>
+        <con:style>QUERY</con:style>
+        <con:default xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>y</con:name>
+        <con:value xsi:nil="true"/>
+        <con:style>QUERY</con:style>
+        <con:default xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Request 1" id="71dfd636-674c-4b39-bf8d-4b6f599ae310" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

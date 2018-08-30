@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="" path="Ran" id="3e98fbc4-559a-4b0b-8256-3fd624696879" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="3e98fbc4-559a-4b0b-8256-3fd624696879fileName">Ran</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="" id="b6d66874-0a83-4a7d-9f44-b07b82611a89" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>x</con:name>
+        <con:value xsi:nil="true"/>
+        <con:style>QUERY</con:style>
+        <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:integer</con:type>
+        <con:default xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Request 1" id="6101f787-a28c-4158-80b2-e8e05a1ff2ae" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

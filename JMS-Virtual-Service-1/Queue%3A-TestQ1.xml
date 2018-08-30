@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:customOperation id="14928123-e5a7-4f47-8471-8abda16f1372" name="Queue: TestQ1" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="14928123-e5a7-4f47-8471-8abda16f1372fileName">Queue%3A-TestQ1</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:operationProperties>
+    <con:property>
+      <con:name>JmsDestination</con:name>
+      <con:value>jms://activeMQsession::-::queue_TestQ1</con:value>
+    </con:property>
+  </con:operationProperties>
+  <con:customResponse name="Response 1" id="d1f844b8-c70f-4b91-a585-581f22366153">
+    <con:settings/>
+    <con:script/>
+    <con:responseProperties>
+      <con:property>
+        <con:name>BindableJmsMockResponse.messageAsString</con:name>
+        <con:value/>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.destination</con:name>
+        <con:value>jms://activeMQsession::queue_TestQ2::-</con:value>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.manualDestination</con:name>
+        <con:value/>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.correlationId</con:name>
+        <con:value/>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.type</con:name>
+        <con:value>TEXT</con:value>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.replyTo</con:name>
+        <con:value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.useIncomingReplyTo</con:name>
+        <con:value>false</con:value>
+      </con:property>
+      <con:property>
+        <con:name>ExtraJndiProperties</con:name>
+        <con:value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      </con:property>
+    </con:responseProperties>
+  </con:customResponse>
+</con:customOperation>
