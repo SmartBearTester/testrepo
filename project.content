@@ -40,7 +40,7 @@ soap\TestClassArray_2InputArray.xml
 soap\transfer_array.xml
 soap\transfer_XML.xml
 soap\Vse.xml
-rest\Vse.xml
+rest\.xml
 rest\transferArray.xml
 rest\HelloWorld.xml
 rest\Date.xml

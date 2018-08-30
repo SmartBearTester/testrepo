@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:resource name="" path="Vse" id="2a2b81ef-cbe2-4290-b619-f472ccfdd9f9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
-    <con:setting id="2a2b81ef-cbe2-4290-b619-f472ccfdd9f9fileName">Vse</con:setting>
+    <con:setting id="2a2b81ef-cbe2-4290-b619-f472ccfdd9f9fileName"/>
   </con:settings>
   <con:parameters/>
   <con:method name="" id="f7901e25-20df-48f8-a8db-fc716f47dbe5" method="GET">
