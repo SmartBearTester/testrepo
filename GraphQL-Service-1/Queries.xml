@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operationGroup type="query" name="Queries" id="7d25881a-a31d-444d-86de-01032423d4f2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="7d25881a-a31d-444d-86de-01032423d4f2fileName">Queries</con:setting>
+  </con:settings>
+  <con:graphQLOperation name="customer" bindingOperationName="customer" id="974506a8-7211-4639-9a49-f01446186e64">
+    <con:settings/>
+    <con:graphQLRequest name="customer" id="0a712469-083f-49d2-9e32-ad5a6a739271">
+      <con:settings/>
+      <con:request>{"query":"query {\n  customer(id: \"string\") {\n    id\n    name\n    email\n    age\n    status\n    products {\n      productID\n      productName\n      quantity\n      info {\n        made\n        disign\n        warranty\n        AnnualFailureRate\n      }\n    }\n    data {\n      LicenseType\n      Status\n    }\n  }\n}\n","operationName":null,"variables":null}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+    </con:graphQLRequest>
+  </con:graphQLOperation>
+  <con:graphQLOperation name="customers" bindingOperationName="customers" id="2ffb1e99-1897-4b8a-9ecd-ad8bdba5c565">
+    <con:settings/>
+    <con:graphQLRequest name="customers" id="46d4b71d-711e-424a-9ce8-3465a0de4e29">
+      <con:settings/>
+      <con:request>{"query":"query {\n  customers {\n    id\n    name\n    email\n    age\n    status\n    products {\n      productID\n      productName\n      quantity\n      info {\n        made\n        disign\n        warranty\n        AnnualFailureRate\n      }\n    }\n    data {\n      LicenseType\n      Status\n    }\n  }\n}\n","operationName":null,"variables":null}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+    </con:graphQLRequest>
+  </con:graphQLOperation>
+</con:operationGroup>

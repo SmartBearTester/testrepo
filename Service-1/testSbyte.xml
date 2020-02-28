@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="" path="testSbyte" id="96dc9524-a17c-4f28-b468-1c94c183f405" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="96dc9524-a17c-4f28-b468-1c94c183f405fileName">testSbyte</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="" id="85317c7f-6d58-49a2-b6b1-949591c57a1a" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="7ad7b4a6-9c48-4294-9d29-05d7b924fb94" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

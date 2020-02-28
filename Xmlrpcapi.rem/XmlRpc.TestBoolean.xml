@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:method name="XmlRpc.TestBoolean" help="         Boolean       " id="b99e3d6a-c11a-40bc-91d7-6541967d0363" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b99e3d6a-c11a-40bc-91d7-6541967d0363fileName">XmlRpc.TestBoolean</con:setting>
+  </con:settings>
+  <con:resultParameter>boolean</con:resultParameter>
+  <con:parameter>boolean</con:parameter>
+</con:method>

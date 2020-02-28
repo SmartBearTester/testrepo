@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:method name="XmlRpc.TestDouble" help="         Double       " id="4b248252-a000-44a9-b54b-6f342751bf47" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4b248252-a000-44a9-b54b-6f342751bf47fileName">XmlRpc.TestDouble</con:setting>
+  </con:settings>
+  <con:resultParameter>double</con:resultParameter>
+  <con:parameter>double</con:parameter>
+</con:method>

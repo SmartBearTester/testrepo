@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:method name="XmlRpc.TestStruct" help="         Struct       " id="a8033c32-245a-42c7-84f6-f827a4bf3309" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a8033c32-245a-42c7-84f6-f827a4bf3309fileName">XmlRpc.TestStruct</con:setting>
+  </con:settings>
+  <con:resultParameter>struct</con:resultParameter>
+  <con:parameter>struct</con:parameter>
+</con:method>

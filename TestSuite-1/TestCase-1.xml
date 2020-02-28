@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="c78f1477-287e-4441-bfe7-4087dc47b776" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c78f1477-287e-4441-bfe7-4087dc47b776fileName">TestCase-1</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="request" id="f6c675b3-ddb7-468d-b56c-722bffc41c37" name="SOAP Request">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap</con:interface>
+      <con:operation>Con_Stroka</con:operation>
+      <con:request name="SOAP Request" id="0408971f-a216-4714-83b9-e7455de1e546">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:Con_Stroka>
+         <!--Optional:-->
+         <ser:x>?</ser:x>
+         <!--Optional:-->
+         <ser:y>?</ser:y>
+      </ser:Con_Stroka>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:assertion type="Valid HTTP Status Codes" id="9e86f53f-2412-45a7-bdd6-055f97bb1b9c" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="3822eb45-081c-445d-bf1f-0a83416efe1b" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="SOAP Fault Assertion" id="ec23e1e3-c248-4037-81e0-eefeb9068dbd" name="Not SOAP Fault"/>
+        <con:assertion type="Schema Compliance" id="07202916-6c86-4660-9c37-74dd60b034c9" name="Schema Compliance">
+          <con:configuration/>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig action="http://localhost/test_service/Service1.asmx/Con_Stroka" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="REST Request" id="5b7a60c8-77f5-42cb-9ba3-82b211e46169">
+    <con:settings/>
+    <con:config service="Service 1" methodName="" resourcePath="/WCFREST/Service.svc/Vse" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="396fd599-3460-45de-96af-f77a6ea5326e" mediaType="application/json">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+        <con:request/>
+        <con:assertion type="Valid HTTP Status Codes" id="795e989d-75f5-4015-b01e-a0e5c15e3f16" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="a3c4c931-70e7-4f4b-a7b1-3a0535756618" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="httprequest" name="HTTP Request" id="a8c2552d-d7a4-4a98-8625-228d7385a447">
+    <con:settings/>
+    <con:config method="GET" xsi:type="con:HttpRequest" id="2c5d09d9-b0ad-432a-99b0-3971bc9e2cd6" name="HTTP Request" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:settings/>
+      <con:endpoint>http://rapis02.aqa.com.ru/</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="amfrequest" name="AMF Request" id="147a9ba8-f688-4eca-8e17-faf7aac3f544">
+    <con:settings/>
+    <con:config xsi:type="con:AMFRequestTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:properties/>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="jdbc" name="JDBC Request" id="6e539c8d-0606-4ba8-9f16-fdac4de600cc">
+    <con:settings>
+      <con:setting id="prettyPrintResponse">true</con:setting>
+    </con:settings>
+    <con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dbConnectionName xsi:nil="true"/>
+      <con:connectionProperties/>
+      <con:properties/>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="JMS" name="JMS Request" id="48db27a1-79dc-44d0-8f3d-5f92cfbfd518">
+    <con:settings/>
+    <con:config service="Service 1" methodName="" resourcePath="/WCFREST/Service.svc/Vse" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="JMS Request" id="bd00368f-39e8-4418-ae79-6cc5912d2d40" mediaType="application/json">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>readyjms://jmsserver::A::B</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep name="GraphQL Query" type="graphqltestqueryrequest" id="3ce5f3ee-09de-49d1-b529-6324abd62335">
+    <con:settings/>
+    <con:config interface="GraphQL Service 1" operationName="customer" operationType="query" xsi:type="con:GraphQLTestRequestWithSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:request name="GraphQL Query" id="e2449e39-c8e6-40bc-845c-444d28f7da70">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:request/>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep name="GraphQL Mutation" type="graphqltestmutationrequest" id="7ee9c802-acaa-4a9a-982c-85ac56b047e2">
+    <con:settings/>
+    <con:config interface="GraphQL Service 1" operationName="addCustomer" operationType="mutation" xsi:type="con:GraphQLTestRequestWithSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:request name="GraphQL Mutation" id="5efa444a-d083-4c57-ad6c-044d2d942b70">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:request/>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="graphqltestrequest" name="GraphQL Request" id="79af8438-8e60-401b-ab2f-cdf328b34021">
+    <con:settings/>
+    <con:config xsi:type="con:GraphQLTestRequest" id="382ad619-8ea2-4b9e-af2f-11ee46abe038" name="GraphQL Request" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:settings/>
+      <con:request/>
+      <con:credentials>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="XmlRpcTestStep" name="XML-RPC" id="03f40540-9136-4b98-9ef1-8a6007607810">
+    <con:settings/>
+    <con:config xsi:type="con:XmlRpcStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:service>Xmlrpcapi.rem</con:service>
+      <con:operation>XmlRpc.TestBase64</con:operation>
+      <con:requestContent/>
+      <con:request id="1a870133-cfe6-456b-8df1-bebaed6a7f60" name="XML-RPC">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/xmlrpc/xmlrpcapi.rem</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+      </con:request>
+      <con:parameter>base64</con:parameter>
+      <con:resultParameter>base64</con:resultParameter>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="properties" name="Properties" id="b32cbc65-8368-4aea-a997-fd067d84d728">
+    <con:settings/>
+    <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:properties/>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="transfer" name="Property Transfer" id="3087a75b-6a70-4a0f-9a93-55a93fba38ee">
+    <con:settings/>
+    <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  </con:testStep>
+  <con:testStep type="datasource" name="DataSource" id="3b066d19-4c4c-42c3-998d-9cef01f1f63a">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasink" name="DataSink" id="20b3e69d-fe6c-492a-a57a-ecf87dd4a2aa">
+    <con:settings/>
+    <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:properties/>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datagen" name="DataGen" id="faab1768-5b3f-45ed-9209-5bcfcd29b877">
+    <con:settings/>
+    <con:config xsi:type="con:DataGeneratorStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="DataSource Loop" id="0babf85d-6815-4e79-a278-5892acb1c319">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep/>
+      <targetStep/>
+      <discardResults>true</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="goto" name="Conditional Goto" id="65dcee01-e57e-4f7b-94b2-0df9aaf21a49">
+    <con:settings/>
+    <con:config xsi:type="con:GotoStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  </con:testStep>
+  <con:testStep type="calltestcase" name="Run TestCase" id="d1d451b3-a2bb-4e82-8f78-2293b0fc339c">
+    <con:settings/>
+    <con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:targetTestCase>31c3597d-9756-40e6-81eb-87f697c082d5</con:targetTestCase>
+      <con:properties/>
+      <con:returnProperties/>
+      <con:runMode>PARALLELL</con:runMode>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="groovy" name="Groovy Script" id="6289b577-1bb9-422b-a451-46d8ddb5e65b">
+    <con:settings/>
+    <con:config>
+      <script/>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="assertionteststep" name="Assertion" id="2515ef72-3b50-4009-b351-9ce6c1526c00">
+    <con:settings/>
+    <con:config xsi:type="con:AssertionTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  </con:testStep>
+  <con:testStep type="delay" name="Delay" id="7315499b-c2d1-4e74-a61b-82ec88c701e0">
+    <con:settings/>
+    <con:config>
+      <delay>1000</delay>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="manualTestStep" name="Manual" id="2eae207f-b9ef-41a3-a19c-cf1c4340e862">
+    <con:settings/>
+    <con:config xsi:type="con:ManualTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  </con:testStep>
+  <con:testStep type="mockresponse" name="SOAP VirtResponse" id="a5a9dc22-b564-4911-b3ac-916dceeced49">
+    <con:settings/>
+    <con:config xsi:type="con:MockResponseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap</con:interface>
+      <con:operation>Con_Stroka</con:operation>
+      <con:path>/</con:path>
+      <con:port>8080</con:port>
+      <con:response id="55250785-0480-4e9a-a3f7-5193969ebb99">
+        <con:settings/>
+        <con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:Con_StrokaResponse>
+         <!--Optional:-->
+         <ser:Con_StrokaResult>?</ser:Con_StrokaResult>
+      </ser:Con_StrokaResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent>
+        <con:wsaConfig mustUnderstand="NONE" version="200508"/>
+      </con:response>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restmockresponse" name="REST VirtResponse" id="c1ce5555-092e-4c9b-af20-1397eac1a2f9">
+    <con:settings/>
+    <con:config xsi:type="con:RESTMockResponseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Service 1</con:interface>
+      <con:path>/WCFREST/Service.svc/Vse</con:path>
+      <con:method>GET</con:method>
+      <con:port>8080</con:port>
+      <con:response mediaType="application/xml" httpResponseStatus="200">
+        <con:responseContent/>
+      </con:response>
+      <con:host>localhost</con:host>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="VirtRunnerTestStep" name="Virtual Service Runner" id="128df55a-5c42-4723-9e68-ed944c101ba3">
+    <con:settings/>
+    <con:config>
+      <url>localhost</url>
+      <server/>
+      <action>run</action>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="tcintegrationteststep" name="TestComplete" id="2f1164fc-e777-433e-ba0d-2fc7e5e96a45">
+    <con:settings/>
+    <con:config>
+      <timeout/>
+      <executionResult>0</executionResult>
+      <resultDescription/>
+      <testRunner>TestComplete 14</testRunner>
+      <runMode/>
+      <exportTestLog/>
+      <silentModeLog/>
+      <projectSuiteFile/>
+      <projectName/>
+      <scriptUnit/>
+      <scriptRoutine/>
+      <silentMode>false</silentMode>
+      <showTestLog>false</showTestLog>
+      <warningAsError>false</warningAsError>
+      <test/>
+      <otherTest/>
+      <otherArgs/>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="sendmailteststep" name="Send Mail" id="8e4fde32-97fe-4153-a897-ab3dbca3e615">
+    <con:settings/>
+    <con:config>
+      <subject/>
+      <message/>
+      <server/>
+      <port>25</port>
+      <login/>
+      <password/>
+      <mailTo/>
+      <mailFrom/>
+      <timeout>0</timeout>
+      <timeout_measure>0</timeout_measure>
+      <StartTLSEnabled>false</StartTLSEnabled>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="fileWaitTestStep" name="File Wait" id="0d637697-fb83-48c9-b257-31aa04d54e82">
+    <con:settings/>
+  </con:testStep>
+  <con:testStep type="propertyWaitTestStep" name="Property Wait" id="6dbc9fe0-abe0-470c-9978-bbbfa0d5e595">
+    <con:settings/>
+  </con:testStep>
+  <con:testStep type="CreateAndWaitForRemoveFile" name="Create File" id="155b5df9-851d-4ff9-8c5c-5178bab39f27">
+    <con:settings/>
+  </con:testStep>
+  <con:testStep type="ftp" name="FTP" id="2882eb2f-ac33-48eb-8d2b-de30958b2b52">
+    <con:settings/>
+    <con:config xsi:type="con:FTPTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:transaction/>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="MQTTReceiveTestStep" name="Receive MQTT Message" id="0a6bd674-765f-4a7d-8c43-32a01fb18ff9">
+    <con:settings/>
+  </con:testStep>
+  <con:testStep type="MQTTDropConnectionTestStep" name="Drop MQTT Connection" id="087376f3-bfd6-4428-897b-45d9cc841607">
+    <con:settings/>
+  </con:testStep>
+  <con:testStep type="MQTTPublishTestStep" name="Publish using MQTT" id="ff51d2b3-74c0-4573-b9e4-90ca1a404417">
+    <con:settings/>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>3087a75b-6a70-4a0f-9a93-55a93fba38ee</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:method name="XmlRpc.TestIntegerArray" help="         Integer array       " id="47216e23-a183-475b-a499-14e7fff0e35f" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="47216e23-a183-475b-a499-14e7fff0e35ffileName">XmlRpc.TestIntegerArray</con:setting>
+  </con:settings>
+  <con:resultParameter>array</con:resultParameter>
+  <con:parameter>array</con:parameter>
+</con:method>

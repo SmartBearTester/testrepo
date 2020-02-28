@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:method name="XmlRpc.TestTwoParameters" help="         Two parameters       " id="f87ab76b-846a-407b-b3e4-ba5aba4e7ae5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f87ab76b-846a-407b-b3e4-ba5aba4e7ae5fileName">XmlRpc.TestTwoParameters</con:setting>
+  </con:settings>
+  <con:resultParameter>int</con:resultParameter>
+  <con:parameter>int</con:parameter>
+  <con:parameter>int</con:parameter>
+</con:method>

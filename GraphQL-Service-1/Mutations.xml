@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operationGroup type="mutation" name="Mutations" id="6d5cd73e-bbd8-4802-8325-7927a3b54d1b" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="6d5cd73e-bbd8-4802-8325-7927a3b54d1bfileName">Mutations</con:setting>
+  </con:settings>
+  <con:graphQLOperation name="addCustomer" bindingOperationName="addCustomer" id="0d8cdef1-fbe4-463a-a7c3-56c1b7a7d736">
+    <con:settings/>
+    <con:graphQLRequest name="addCustomer" id="39a2bf58-cb70-4740-9f6f-e917089281af">
+      <con:settings/>
+      <con:request>{"query":"mutation {\n  addCustomer(name: \"string\", email: \"string\", age: 0) {\n    id\n    name\n    email\n    age\n    status\n    products {\n      productID\n      productName\n      quantity\n      info {\n        made\n        disign\n        warranty\n        AnnualFailureRate\n      }\n    }\n    data {\n      LicenseType\n      Status\n    }\n  }\n}\n","operationName":null,"variables":null}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+    </con:graphQLRequest>
+  </con:graphQLOperation>
+  <con:graphQLOperation name="editCustomer" bindingOperationName="editCustomer" id="53ff518b-f88e-45ff-b2eb-b069f4bc0e4e">
+    <con:settings/>
+    <con:graphQLRequest name="editCustomer" id="2a4d252f-c2fb-45a4-b87a-3b3150bd6d7f">
+      <con:settings/>
+      <con:request>{"query":"mutation {\n  editCustomer(id: \"string\", name: \"string\", email: \"string\", age: 0, extraData: \"2019-07-20\") {\n    id\n    name\n    email\n    age\n    status\n    products {\n      productID\n      productName\n      quantity\n      info {\n        made\n        disign\n        warranty\n        AnnualFailureRate\n      }\n    }\n    data {\n      LicenseType\n      Status\n    }\n  }\n}\n","operationName":null,"variables":null}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+    </con:graphQLRequest>
+  </con:graphQLOperation>
+</con:operationGroup>
