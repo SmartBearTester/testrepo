@@ -20,9 +20,9 @@
    <soapenv:Body>
       <ser:Con_Stroka>
          <!--Optional:-->
-         <ser:x>?</ser:x>
+         <ser:x>a</ser:x>
          <!--Optional:-->
-         <ser:y>?</ser:y>
+         <ser:y>b</ser:y>
       </ser:Con_Stroka>
    </soapenv:Body>
 </soapenv:Envelope>]]></con:request>
